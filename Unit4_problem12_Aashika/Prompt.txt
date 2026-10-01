@@ -1,0 +1,13 @@
+Create a clear academic flowchart illustrating the backtracking algorithm for graph coloring a graph with 4 vertices (V1, V2, V3, V4) using 3 colors: Red, Blue, and Green.
+
+Show the process of assigning colors to each vertex one by one. At every vertex, check whether the selected color conflicts with any adjacent vertex. If the color is valid, proceed to the next vertex. If no valid color is available, backtrack to the previous vertex and try another color.
+
+Clearly show the color assignments, validity checks, recursive steps, and backtracking steps using arrows and decision boxes.
+
+Show the final successful coloring:
+V1 = Red
+V2 = Blue
+V3 = Green
+V4 = Red
+
+Use a clean, professional DAA academic flowchart style with readable text and minimal decoration.
