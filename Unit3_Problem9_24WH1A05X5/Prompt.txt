@@ -1,0 +1,14 @@
+Draw a clear and visually appealing DP table for the 0/1 Knapsack
+problem with 4 items and a maximum capacity of 10.
+Use the following item data:
+Item 1: Weight = 2, Value = 3
+Item 2: Weight = 3, Value = 4
+Item 3: Weight = 4, Value = 5
+Item 4: Weight = 5, Value = 6
+Show capacities from 0 to 10 as columns and the items as rows.
+Display the DP values in each cell.
+Also visually indicate the inclusion/exclusion decision for items
+where appropriate, and clearly highlight the final maximum value.
+The final maximum value should be 13.
+Make the visualization suitable for an academic DAA project
+presentation.
