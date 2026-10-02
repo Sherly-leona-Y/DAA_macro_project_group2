@@ -1,7 +1,0 @@
-Project Topic: Divide-and-Conquer Matrix Multiplication
-
-Prompt:
-"I need a visualization for Divide-and-Conquer Matrix Multiplication using Strassen's algorithm. Illustrate how two input matrices A and B are recursively divided into four submatrices (A11, A12, A21, A22 and B11, B12, B21, B22). Show the seven Strassen recursive products M1 to M7 and how they are combined to form the four result blocks C11, C12, C21, and C22. The final output should be a clear block diagram of the submatrix operations, suitable for a Data and Algorithm Analysis project."
-
-Expected Outcome:
-A block diagram showing recursive matrix division, the seven Strassen products, and the recombination into the final matrix C.
