@@ -1,0 +1,63 @@
+Create a complete web-based visualization project for the Merge Sort algorithm using HTML, CSS, and JavaScript.
+
+The main objective of the project is to demonstrate how the Merge Sort algorithm works using the divide-and-conquer technique. The project should provide an interactive and easy-to-understand visualization suitable for a Design and Analysis of Algorithms (DAA) academic project.
+
+The application should allow the user to enter an array of numbers and start the Merge Sort visualization. The entered array should first be displayed as the original unsorted array.
+
+During the sorting process, show how the array is recursively divided into smaller subarrays. Continue dividing the array until individual elements or single-element subarrays are obtained. Represent this recursive division clearly using a recursion tree or a similar visual structure.
+
+After the division phase, demonstrate the merging process. Show how the smaller sorted subarrays are compared and merged together to form larger sorted subarrays. Continue this process until the complete array is sorted.
+
+The visualization should clearly distinguish between the division stage and the merging stage. Each step should be displayed in an organized manner so that a student can understand the recursive nature of Merge Sort.
+
+The project should include the following features:
+
+1. A clean and simple user interface.
+2. An input field for entering numbers separated by spaces or commas.
+3. A button to start the Merge Sort visualization.
+4. A button to reset or clear the input and visualization.
+5. Display of the original input array.
+6. Visualization of recursive division of the array.
+7. Visualization of the merging process.
+8. Display of the final sorted array.
+9. Clear labels for different stages of the algorithm.
+10. A visual recursion tree showing how the array is divided.
+11. Proper handling of different input array sizes.
+12. A simple explanation of the Merge Sort algorithm.
+13. Display of the time complexity and space complexity.
+14. Responsive and readable styling using CSS.
+
+The Merge Sort algorithm should be implemented recursively in JavaScript. The implementation should follow the standard divide-and-conquer approach:
+
+- Divide the array into two halves.
+- Recursively sort the left half.
+- Recursively sort the right half.
+- Merge the two sorted halves.
+- Continue until the complete array is sorted.
+
+The project should demonstrate the following complexity:
+
+Best Case: O(n log n)
+Average Case: O(n log n)
+Worst Case: O(n log n)
+Space Complexity: O(n)
+
+Use HTML for the structure of the webpage, CSS for styling and layout, and JavaScript for implementing the recursive Merge Sort algorithm and visualization.
+
+The final visualization should be suitable for an academic DAA project and should make the recursive division and merging process easy to understand.
+
+The project should contain the following files:
+
+index.html - Contains the structure and user interface of the project.
+
+style.css - Contains the styling, layout, colors, buttons, arrays, recursion tree, and other visual elements.
+
+script.js - Contains the recursive Merge Sort algorithm, array processing, visualization logic, and user interactions.
+
+README.md - Contains the project description, algorithm explanation, features, complexity analysis, and instructions for running the project.
+
+Prompt.txt - Contains the prompt used to generate or develop the project.
+
+Visualization.png - Contains a screenshot of the completed working Merge Sort visualization.
+
+The final result should be functional, organized, visually clear, and appropriate for demonstrating the Merge Sort recursion tree as a DAA project.
