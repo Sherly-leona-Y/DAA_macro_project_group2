@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #234f7d;
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.input-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.input-section label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+input {
+    width: 400px;
+    max-width: 90%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 20px;
+    margin-left: 8px;
+    border: none;
+    border-radius: 7px;
+    background: #234f7d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #183a5c;
+}
+
+.section {
+    margin-top: 35px;
+    padding: 25px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border-left: 5px solid #234f7d;
+}
+
+.section h2,
+.result h2,
+.complexity h2,
+.info h2 {
+    color: #234f7d;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: #555;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+/* Division tree */
+
+.tree-level {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 22px 0;
+    flex-wrap: wrap;
+}
+
+.level-label {
+    width: 80px;
+    font-weight: bold;
+    color: #234f7d;
+}
+
+.node {
+    background: #e8f1fa;
+    border: 2px solid #234f7d;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-weight: bold;
+    min-width: 85px;
+    text-align: center;
+}
+
+/* Merge section */
+
+.merge-step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 18px 0;
+    flex-wrap: wrap;
+}
+
+.merge-box {
+    background: #eef6ee;
+    border: 2px solid #4d7c4d;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-weight: bold;
+}
+
+.arrow {
+    font-size: 22px;
+    font-weight: bold;
+    color: #555;
+}
+
+.merged-result {
+    background: #e8f1fa;
+    border: 2px solid #234f7d;
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-weight: bold;
+}
+
+/* Final result */
+
+.result {
+    margin-top: 35px;
+    padding: 25px;
+    text-align: center;
+    background: #eef6ee;
+    border-radius: 10px;
+    border: 2px solid #4d7c4d;
+}
+
+.final-array {
+    display: inline-block;
+    padding: 15px 25px;
+    background: white;
+    border: 2px solid #4d7c4d;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Complexity */
+
+.complexity {
+    margin-top: 35px;
+    padding: 25px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border-left: 5px solid #234f7d;
+}
+
+.complexity-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.complexity-box p {
+    background: white;
+    padding: 12px 18px;
+    border-radius: 7px;
+    border: 1px solid #ccd6e0;
+}
+
+/* Information */
+
+.info {
+    margin-top: 35px;
+    padding: 25px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border-left: 5px solid #234f7d;
+}
+
+.info p {
+    line-height: 1.7;
+    color: #444;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        margin-left: 0;
+    }
+
+    .level-label {
+        width: 100%;
+        text-align: center;
+    }
+}
