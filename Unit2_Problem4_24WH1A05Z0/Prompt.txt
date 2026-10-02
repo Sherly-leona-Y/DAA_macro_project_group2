@@ -1,1 +1,10 @@
-Create a flow diagram for the Greedy Job Sequencing algorithm showing how jobs are selected based on their deadlines and profits. Show the steps of sorting jobs by decreasing profit, checking available time slots before each deadline, scheduling a job if a slot is available, skipping it otherwise, and calculating the final maximum profit. Clearly show the decision paths and the final job sequence.
+Create a flow diagram for the Greedy Job Sequencing algorithm showing how jobs are selected based on their deadlines and profits.
+
+Show the steps of:
+1. Sorting jobs by decreasing profit.
+2. Checking available time slots before each deadline.
+3. Scheduling a job if a slot is available.
+4. Skipping the job if no slot is available.
+5. Calculating the final maximum profit.
+
+Clearly show the decision paths and the final job sequence.
