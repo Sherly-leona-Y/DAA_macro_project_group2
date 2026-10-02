@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Sort Recursion Tree</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Merge Sort Recursion Tree</h1>
+
+    <p class="subtitle">
+        Visualizing recursive division and merging of an array of 8 elements
+    </p>
+
+    <div class="input-section">
+        <label for="arrayInput">Enter 8 elements:</label>
+
+        <input
+            type="text"
+            id="arrayInput"
+            value="8, 3, 5, 1, 7, 2, 6, 4"
+        >
+
+        <button onclick="generateTree()">Generate Recursion Tree</button>
+    </div>
+
+    <div class="section">
+        <h2>1. Recursive Division</h2>
+        <p class="description">
+            Merge Sort repeatedly divides the array into two smaller parts
+            until each part contains only one element.
+        </p>
+
+        <div id="divisionTree"></div>
+    </div>
+
+    <div class="section">
+        <h2>2. Merging Process</h2>
+        <p class="description">
+            The individual elements are merged back together in sorted order.
+        </p>
+
+        <div id="mergeSteps"></div>
+    </div>
+
+    <div class="result">
+        <h2>Final Sorted Array</h2>
+        <div id="finalArray"></div>
+    </div>
+
+    <div class="complexity">
+        <h2>Time Complexity</h2>
+
+        <div class="complexity-box">
+            <p><strong>Best Case:</strong> O(n log n)</p>
+            <p><strong>Average Case:</strong> O(n log n)</p>
+            <p><strong>Worst Case:</strong> O(n log n)</p>
+            <p><strong>Space Complexity:</strong> O(n)</p>
+        </div>
+    </div>
+
+    <div class="info">
+        <h2>Algorithm Idea</h2>
+
+        <p>
+            Merge Sort follows the Divide and Conquer technique.
+            First, the array is divided into smaller subarrays.
+            Then the subarrays are sorted and merged to produce
+            the final sorted array.
+        </p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
