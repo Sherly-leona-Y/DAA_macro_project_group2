@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Knapsack Branch & Bound Visualizer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Knapsack Solver</h1>
+            <p>0/1 Knapsack · Branch and Bound</p>
+        </div>
+
+        <div class="header-status">
+            <span id="status">READY</span>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- LEFT PANEL -->
+
+        <section class="control-panel">
+
+            <h2>Problem Input</h2>
+
+            <label>Knapsack Capacity</label>
+
+            <input
+                type="number"
+                id="capacity"
+                value="10"
+                min="1"
+            >
+
+            <h3>Items</h3>
+
+            <div id="items-container">
+
+                <div class="item-row">
+                    <span>1</span>
+                    <input type="number" class="weight" value="2">
+                    <input type="number" class="profit" value="40">
+                </div>
+
+                <div class="item-row">
+                    <span>2</span>
+                    <input type="number" class="weight" value="3">
+                    <input type="number" class="profit" value="50">
+                </div>
+
+                <div class="item-row">
+                    <span>3</span>
+                    <input type="number" class="weight" value="4">
+                    <input type="number" class="profit" value="60">
+                </div>
+
+                <div class="item-row">
+                    <span>4</span>
+                    <input type="number" class="weight" value="5">
+                    <input type="number" class="profit" value="70">
+                </div>
+
+                <div class="item-row">
+                    <span>5</span>
+                    <input type="number" class="weight" value="6">
+                    <input type="number" class="profit" value="80">
+                </div>
+
+            </div>
+
+            <button id="solveButton">
+                Solve
+            </button>
+
+            <button id="resetButton">
+                Reset
+            </button>
+
+            <hr>
+
+            <h2>Controls</h2>
+
+            <button id="playButton">
+                ▶ Play
+            </button>
+
+            <button id="pauseButton">
+                ⏸ Pause
+            </button>
+
+            <button id="stepButton">
+                → Next Step
+            </button>
+
+        </section>
+
+
+        <!-- CENTER TREE -->
+
+        <section class="tree-panel">
+
+            <div class="tree-header">
+
+                <h2>Branch & Bound Decision Tree</h2>
+
+                <div class="legend">
+
+                    <span>
+                        <i class="legend-box promising"></i>
+                        Promising
+                    </span>
+
+                    <span>
+                        <i class="legend-box explored"></i>
+                        Explored
+                    </span>
+
+                    <span>
+                        <i class="legend-box pruned"></i>
+                        Pruned
+                    </span>
+
+                    <span>
+                        <i class="legend-box optimal"></i>
+                        Optimal
+                    </span>
+
+                </div>
+
+            </div>
+
+            <div id="tree-container"></div>
+
+        </section>
+
+
+        <!-- RIGHT PANEL -->
+
+        <section class="info-panel">
+
+            <h2>Algorithm Status</h2>
+
+            <div class="stat-card">
+                <span>Maximum Profit</span>
+                <strong id="max-profit">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Total Weight</span>
+                <strong id="total-weight">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Nodes Explored</span>
+                <strong id="nodes-explored">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <span>Branches Pruned</span>
+                <strong id="branches-pruned">0</strong>
+            </div>
+
+            <hr>
+
+            <h2>Selected Node</h2>
+
+            <div id="node-info">
+
+                <p>Select a node in the tree.</p>
+
+            </div>
+
+        </section>
+
+    </main>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="js/tree_data.js"></script>
+<script src="js/visualizer.js"></script>
+
+</body>
+</html>
